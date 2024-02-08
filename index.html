@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="bmiCalculator.js"></script>
+</head>
+<body>
+
+    <!-- Section 1: Banner with Image and Proposition Text -->
+    <div id="banner">
+        <img src="your-image-url.jpg" alt="BMI Calculation">
+        <h1>Get your BMI calculation in a second</h1>
+    </div>
+
+    <!-- Section 2: BMI Calculation Form -->
+    <div id="bmiForm">
+        <form onsubmit="event.preventDefault(); calculateBMI();">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"><br><br>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight"><br><br>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height"><br><br>
+
+            <input type="submit" value="Calculate BMI">
+        </form>
+    </div>
+
+    <!-- Section 3: BMI Output -->
+    <div id="bmiOutput">
+        <p ><span id="your_name"></span>, You BMI is <span id="bmiResult"></span>.</p>
+        <p >You are <span id="bmiStatus"></span>.</p>
+    </div>
+
+</body>
+</html>
